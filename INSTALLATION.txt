@@ -1,0 +1,90 @@
+RELAIS 1.0.2 — BUILD 5 — INSTALLATION
+
+Mac Apple Silicon, macOS 14 minimum.
+Téléchargement officiel :
+https://github.com/Planssurlacomete/Relais/releases/download/v1.0.2/Relais-v1.0.2-macOS-AppleSilicon.zip
+Décompresser l’archive.
+Déplacer Relais.app dans Applications, puis l’ouvrir.
+L’icône de barre de menus permet d’afficher/masquer complètement Relais,
+de choisir le mode complet ou réduit, de changer les réglages et de quitter.
+Ajouter un projet avec +. Le bouton − réduit le panneau en une pastille
+flottante toujours visible. Déplacer la pastille par son titre et utiliser son
+contrôle d’agrandissement pour restaurer le panneau. Le mode choisi et les
+positions des deux modes sont conservés au redémarrage.
+À la première ouverture sur une installation neuve, « Bienvenue sur Relais »
+présente deux champs initialement vides : Position gauche (« Premier
+intervenant ») et Position droite (« Second intervenant »). Choisir deux noms
+renseignés et différents, puis cliquer sur Commencer. Les caractères Unicode
+et accentués sont acceptés ; la comparaison ignore la casse et les espaces
+superflus. Aucun projet de démonstration n’est créé. Les noms restent
+modifiables dans les réglages, avec personnalisation facultative par projet.
+Le levier blanc glisse de gauche à droite, sans rotation.
+Sous chaque interrupteur : + Note ajoute une note ; clic sur son texte pour
+modifier ; Entrée valide ; Échap annule. La petite épingle à côté de ×
+épingle/désépingle, × supprime uniquement cette note. Cmd+Z annule.
+Toutes les notes restent conservées jusqu’à suppression manuelle.
+
+Signature fournie : locale ad hoc uniquement.
+Aucune signature Developer ID et aucune notarisation Apple.
+Si Gatekeeper bloque la première ouverture d’une copie de confiance :
+Réglages Système > Confidentialité et sécurité > Ouvrir quand même,
+puis confirmer si macOS le propose. Ne pas désactiver Gatekeeper.
+
+App Sandbox et Hardened Runtime sont activés. Aucun accès réseau ni
+permission générale sur vos fichiers n’est accordé à Relais.
+
+Les données restent sur votre Mac, dans :
+~/Library/Containers/org.relaisapp.Relais/Data/Library/Application Support/Relais/state.json
+
+MISE À JOUR DEPUIS 1.0.1 OU 1.0.2
+Quitter Relais, sauvegarder Relais.app et le state.json du conteneur, puis
+remplacer l’application. Les projets, positions, notes, épingles, libellés,
+ordre et préférences sont conservés. Les installations migrées commencent en
+mode complet et ne repassent pas par la configuration initiale. Un ancien projet sans notes reçoit une
+collection vide ; une ancienne note unique est également reprise.
+Toute installation existante avec un état valide est considérée comme déjà
+configurée, même sans projet : elle ne repasse pas par l’assistant.
+Un fichier illisible ne doit pas être remplacé par une configuration neuve.
+Les réglages de lancement à la connexion restent inchangés.
+Pour revenir en 1.0.1, conserver d’abord une copie des données récentes 1.0.2,
+puis restaurer ensemble l’ancienne application ET son état 1.0.1 sauvegardé.
+Une ancienne application peut refuser le nouveau schéma de données.
+
+MISE À JOUR DEPUIS 1.0.0
+Quitter Relais et conserver une copie de l’ancien fichier avant remplacement :
+~/Library/Application Support/Relais/state.json
+Au premier lancement sandbox, macOS est chargé de le déplacer dans le
+conteneur. Vérifier que les projets réapparaissent avant de reprendre les
+modifications. Si la liste reste vide, quitter Relais, conserver aussi toute
+sauvegarde du conteneur déjà présente, puis copier l’ancien state.json vers
+le chemin du conteneur indiqué ci-dessus. Ne pas supprimer le conteneur.
+Le mécanisme automatique intervient uniquement lors de sa création initiale.
+
+Avec une signature ad hoc, macOS peut demander une nouvelle autorisation
+d’accès au conteneur après une mise à jour. Confirmer seulement pour la
+copie de Relais que vous venez d’installer.
+
+Le lancement à l’ouverture de session est désactivé par défaut.
+Une signature ad hoc peut être refusée par ServiceManagement :
+l’application affiche l’erreur et le vrai statut macOS.
+
+Les changements réels de Spaces, le plein écran, Stage Manager,
+la déconnexion physique d’écran et macOS 14 restent à valider.
+Le rapport joint détaille les tests réellement exécutés.
+
+CONDITIONS DE DISTRIBUTION
+Les archives ne contiennent aucune donnée utilisateur. Le dépôt ne fournit
+pas de licence générale pour le code applicatif. La notice MIT du commutateur
+adapté est conservée dans les sources et les ressources de l’application.
+
+DÉSINSTALLATION
+Quitter Relais. Désactiver son lancement à la connexion s’il a été activé,
+puis déplacer Relais.app dans la corbeille. Les données sont conservées.
+Pour supprimer AUSSI les projets et notes, le faire uniquement de façon
+explicite, après sauvegarde si souhaitée : supprimer le dossier Relais dans
+le dossier Application Support du conteneur indiqué plus haut. La suppression
+des données est distincte de la désinstallation de l’application.
+
+Commutateur adapté de Saiyed-Tanvir (Uiverse), licence MIT :
+https://uiverse.io/Saiyed-Tanvir/pretty-moose-9
+Notice complète dans les ressources de Relais.app.
