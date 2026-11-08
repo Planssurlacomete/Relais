@@ -1,0 +1,14 @@
+PASS probe signature verifies with Hardened Runtime enabled
+PASS probe uses exactly the production sandbox-only entitlements
+PASS default storage resolves inside isolated sandbox container
+PASS first-launch manifest migrates entire legacy fixture
+PASS migrated state loads without recovery warnings
+PASS sandbox allows atomic state writes inside own container
+PASS sandbox reload preserves complete updated state
+PASS saved state file permissions are exactly 0600
+PASS sandbox denies reading unrelated external canary
+PASS sandbox denies writing unrelated external canary
+PASS sandbox denies loopback connect with EPERM or EACCES
+RESULT 0 failure(s)
+PASS isolated sandbox security probe completed
+INFO isolated test container retained; no existing container was deleted

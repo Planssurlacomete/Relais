@@ -1,0 +1,5 @@
+Same host: macOS27.0.1 arm64, optimized Swift5 target macOS14.
+Bundle bytes: 1.0.0=1094533; 1.0.1=1120434; delta=25901.
+Empty-list idle physical footprint (one short sample): 1.0.0=24.2M; 1.0.1=24.4M.
+Short launch/test/exit real seconds (three samples): 1.0.0=[0.26,0.18,0.17]; 1.0.1=[0.18,0.17,0.16].
+Timing includes AppKit smoke assertions; 1.0.1 has one extra persistence assertion. Not an all-day/battery benchmark.

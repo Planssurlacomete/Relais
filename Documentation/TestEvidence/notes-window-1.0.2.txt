@@ -1,0 +1,19 @@
+PASS floating level
+PASS nonactivating panel
+PASS does not hide on deactivate
+PASS all Spaces
+PASS fullscreen auxiliary
+PASS all applications
+PASS accessory activation policy
+PASS can receive editing keys
+PASS never a main window
+PASS compact width
+PASS no opaque titlebar
+PASS delete registers note undo
+PASS undo menu enabled after deletion
+PASS undo handler restores exact note
+PASS redo menu enabled after undo
+PASS redo handler deletes only note
+PASS hide/show with persisted preference
+PASS offscreen frame recovery (simulated)
+PASS sandbox fixture persistence

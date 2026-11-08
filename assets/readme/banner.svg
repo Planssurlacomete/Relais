@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Relais — Gardez le fil de vos projets</title>
+  <desc id="desc">Un levier blanc vertical sur une piste bleue, à côté du nom Relais. Un petit panneau pour Projet Alpha, Projet Bêta et Projet Gamma, avec deux intervenants au choix.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111a26"/><stop offset="1" stop-color="#090d13"/></linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a293b"/><stop offset="1" stop-color="#111820"/></linearGradient>
+    <linearGradient id="lever" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e6edf6"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#2196f3" stop-opacity=".23"/><stop offset="1" stop-color="#2196f3" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-100%" y="-60%" width="300%" height="240%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000" flood-opacity=".65"/></filter>
+  </defs>
+  <rect x="1" y="1" width="1198" height="358" rx="28" fill="url(#background)" stroke="#27313e"/>
+  <ellipse cx="225" cy="180" rx="270" ry="240" fill="url(#glow)"/>
+  <g fill="#6f8fb0" opacity=".33"><circle cx="74" cy="57" r="1.5"/><circle cx="367" cy="301" r="1.2"/><circle cx="1121" cy="76" r="1.5"/><circle cx="1084" cy="299" r="1"/></g>
+  <rect x="84" y="78" width="264" height="204" rx="39" fill="url(#tile)" stroke="#34485d"/>
+  <rect x="128" y="163" width="170" height="34" rx="17" fill="#2196f3"/>
+  <rect x="223.2" y="122.2" width="47.6" height="115.6" rx="23.8" fill="url(#lever)" filter="url(#shadow)"/>
+  <path d="M129 211h45" stroke="#5c738a" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+  <path d="M279 149h18" stroke="#7fa4c7" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif">
+    <text x="422" y="139" fill="#f4f7fb" font-size="84" font-weight="750" letter-spacing="-3">Relais</text>
+    <text x="425" y="183" fill="#c1cbd7" font-size="25" font-weight="450">Gardez le fil de vos projets.</text>
+    <text x="426" y="215" fill="#6ebcff" font-size="12" font-weight="650" letter-spacing="2.3">UN PETIT PANNEAU. UN GESTE. LE BON INTERLOCUTEUR.</text>
+    <g font-size="15" font-weight="500">
+      <rect x="424" y="245" width="160" height="43" rx="11" fill="#142235" stroke="#2a425c"/>
+      <circle cx="445" cy="266.5" r="4" fill="#5db8ff"/>
+      <text x="460" y="272" fill="#d6e7f8">Projet Alpha</text>
+      <rect x="596" y="245" width="194" height="43" rx="11" fill="#101923" stroke="#293645"/>
+      <circle cx="617" cy="266.5" r="4" fill="#7e9bb8"/>
+      <text x="632" y="272" fill="#c2cfdd">Projet Bêta</text>
+      <rect x="802" y="245" width="164" height="43" rx="11" fill="#101923" stroke="#293645"/>
+      <circle cx="823" cy="266.5" r="4" fill="#7e9bb8"/>
+      <text x="838" y="272" fill="#c2cfdd">Projet Gamma</text>
+    </g>
+  </g>
+</svg>

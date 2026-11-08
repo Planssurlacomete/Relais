@@ -1,0 +1,1 @@
+PASS: 94 behavioral assertions (model, inheritance, persistence, limits, private permissions and unsafe local files).
